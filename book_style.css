@@ -1,0 +1,149 @@
+body {
+    margin: auto;
+    padding: 50px;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ---- Set up site grid ---- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "banner banner"
+        "side main"
+        "footer footer";
+        grid-gap: 4px;
+    
+}
+
+/* ---- End of grid setup ---- */
+
+
+/* -000- Area styling -000- */
+
+.box {
+    padding: 20px;
+    /* border-radius: 10px; */
+    background-color: #92DCE5; /* Blue */
+}
+
+/* Area colouring... */
+
+/* logo, banner and footer background are the same */
+.logo, .banner, .footer {
+    background-color: #c4986e;  /*Brown */
+}
+
+/* Set font on dark areas to white */
+.logo, .banner, .side, .footer {
+    color: #fff;
+}
+
+/* Area specifics */
+
+.logo {
+    padding: 0;
+    float: left;
+    
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.side {
+    grid-area: side;
+    background-color: #6369D1;  /* Dark blue */
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f9c7c3;  /* Yellow and orange */
+    border: solid 1px #F7EC59;
+}
+
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+}
+
+/* -000- End of area styling -000- */
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Navigation Links */
+.nav a {font-weight: bold;}
+.nav a:link, .nav a:visited {color: #AA0000;} /*dark red */
+.nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
+
+
+/* links in page */
+a {font-weight: bold;}
+a:link{color: #AA0000;} /*dark_red */
+a:visited{color: #111177;} /* dark blue */
+a:hover{color: #000;}    /* Black*/
+
+
+/* Contact Form Styling */
+.contact {
+    width: 100%;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 85%;
+    height: auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);     
+}
+
+.center_image {
+    text-align: center;
+}
+
+/* Sub Heading Formatting */
+.sub_heading {
+    font-family: 'Ubuntu', sans-serif;
+    color: #593849; /* purple */
+    font-weight: bold;
+}
+
+/* Results Box Formatting */
+.results {
+	background-color: #f4ebe1;
+	border-radius: 10px;
+	border: 1px solid #000;
+	padding: 5px;
+}
+	
+/* Error Box formatting */
+.error{
+	background-color: #c4986e; /*coffee brown*/
+	border: 2px solid #8a1737; /*dark red border*/
+	color: #8a1737; /*dark red*/
+	border-radius: 5px;
+	padding:20px;
+}
+
+/* form formatting */
+
+.search {
+	width: 200px;
+}
+
+
+
+
+
+
+
+
